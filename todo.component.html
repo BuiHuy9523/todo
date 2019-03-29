@@ -1,0 +1,18 @@
+<table class="table" >
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Title</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let todo of todoList index as i">
+  <tr>
+    <th scope="row">{{todo.id}}</th>
+    <td>{{todo.title}}</td>
+    <td><button (click)="deleteTodo(i)">delete</button></td>
+  </tr>
+  </tbody>
+</table>
+
+
+
